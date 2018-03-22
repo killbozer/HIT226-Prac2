@@ -1,37 +1,78 @@
 <!doctype html>
+
 <html lang="en">
+
     <head>
+	
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+
         <meta charset="utf-8">
+
         <title>Registration Form</title>
+
         <meta name="description" content="Registration Form">
+
     </head>
+
     <body>
+
 
 	<header>
 
-	<h1>Registration Form</h1>
+	<h1>DD Forums</h1>
 
 	</header>
+	
+	<main>
 
-     <form>
+	<h1>Registration Form</h1>
+	
+	<p>Use this page to sign up to our forum.</p>
+
+    <form action="registered.html">
+
 	<table>
 	<tr>
-  		<th>First name: <input></th>
-	
-  		<th>Last name: <input></th>
+  		<th>First name:* <input name="First name" required></th>
 	</tr>
 	<tr>
-		<th>Address: <input></th>
-	
-  		<th>Email: <input><br></th>
+  		<th>Surname name:* <input name="Surname" required></th>
 	</tr>
 	<tr>
-		<th>Telephone: <input></th>
-	
-  		<th>Birthday: <input><br></th>
+  		<th>Username:* <input name="Username" required></th>
+	</tr>
+	<tr>
+  		<th>Password:* <input name="Password" type="password" required></th>
+			<!-- No the password is not saved -->
+	</tr>
+	<tr>
+		<th>Street Address: <input name="Street Address"></th>
+	</tr>
+	<tr>
+  		<th>Email Address:* <input name="Email Address" required><br></th>
+	</tr>
+	<tr>
+		<th>Telephone: <input name="Telephone"></th>
+	</tr>
+	<tr>
+  		<th>Birthdate:* <input name="Birthdate" required><br></th>
 	</tr>
 	</table>
-		<input type="submit" value="Submit">
+		<input class="submit" type="submit" value="Submit">
+
+	<p>Items with an * are required</p>	
+
     </form>
+
+	</main>
+
+	<footer>
+
+	<p>Copyright Matthew Wheelhouse</p>
+
+	</footer>
+
+
     </body>
+
 </html>
